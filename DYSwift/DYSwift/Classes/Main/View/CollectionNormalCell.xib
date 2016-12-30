@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionNormalCell" customModule="DYSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="182"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="182"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="斗鱼直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eEN-eS-uCt" userLabel="RoomNameLabel">
+                        <rect key="frame" x="10" y="166" width="215" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="G8f-v2-XDb" userLabel="IconImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="235" height="166"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xvc-hm-o9w" userLabel="OnlineBtn">
+                        <rect key="frame" x="197" y="0.0" width="33" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <inset key="imageEdgeInsets" minX="-10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="666" image="viewerIcon"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ynd-SB-xEf">
+                        <rect key="frame" x="10" y="145" width="16" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="EHU-QR-wRi"/>
+                            <constraint firstAttribute="width" constant="16" id="m2g-gh-X74"/>
+                        </constraints>
+                        <state key="normal" image="Img_user"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="斗鱼直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nN-Gj-MAu" userLabel="NickNameLabel">
+                        <rect key="frame" x="31" y="146.5" width="45" height="13.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="eEN-eS-uCt" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="02n-UQ-dgl"/>
+                <constraint firstItem="G8f-v2-XDb" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Eru-yv-BFG"/>
+                <constraint firstItem="eEN-eS-uCt" firstAttribute="top" secondItem="Ynd-SB-xEf" secondAttribute="bottom" constant="5" id="GMD-sx-FbK"/>
+                <constraint firstItem="Ynd-SB-xEf" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="MPG-i1-bCH"/>
+                <constraint firstItem="3nN-Gj-MAu" firstAttribute="centerY" secondItem="Ynd-SB-xEf" secondAttribute="centerY" id="RQw-fb-2y9"/>
+                <constraint firstAttribute="trailing" secondItem="Xvc-hm-o9w" secondAttribute="trailing" constant="5" id="eO5-kh-vVL"/>
+                <constraint firstItem="3nN-Gj-MAu" firstAttribute="leading" secondItem="Ynd-SB-xEf" secondAttribute="trailing" constant="5" id="eXC-MX-LCX"/>
+                <constraint firstAttribute="bottom" secondItem="eEN-eS-uCt" secondAttribute="bottom" id="fEx-5k-Xrr"/>
+                <constraint firstAttribute="trailing" secondItem="eEN-eS-uCt" secondAttribute="trailing" constant="10" id="gJY-wh-KqJ"/>
+                <constraint firstAttribute="trailing" secondItem="G8f-v2-XDb" secondAttribute="trailing" id="kOp-kl-5Vu"/>
+                <constraint firstItem="eEN-eS-uCt" firstAttribute="top" secondItem="G8f-v2-XDb" secondAttribute="bottom" id="nBs-Jw-47b"/>
+                <constraint firstItem="G8f-v2-XDb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ySx-bL-XPk"/>
+                <constraint firstItem="Xvc-hm-o9w" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="yjX-KK-Cc4"/>
+            </constraints>
+            <size key="customSize" width="235" height="182"/>
+            <connections>
+                <outlet property="iconImageView" destination="G8f-v2-XDb" id="lFL-tK-JGh"/>
+                <outlet property="nickNameLabel" destination="3nN-Gj-MAu" id="oNd-pa-hiQ"/>
+                <outlet property="onlineBtn" destination="Xvc-hm-o9w" id="H2o-RF-rZk"/>
+                <outlet property="roomNameLabel" destination="eEN-eS-uCt" id="SRO-mk-zV4"/>
+            </connections>
+            <point key="canvasLocation" x="14.5" y="165"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="Img_user" width="16" height="16"/>
+        <image name="viewerIcon" width="10" height="8"/>
+    </resources>
+</document>

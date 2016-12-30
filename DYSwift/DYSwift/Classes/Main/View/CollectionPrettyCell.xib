@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionPrettyCell" customModule="DYSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="194" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="194" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Img_default" translatesAutoresizingMaskIntoConstraints="NO" id="mhn-lG-qfg" userLabel="IconImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="194" height="195"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BU0-Kh-Mod" userLabel="CityBtn">
+                        <rect key="frame" x="143" y="196" width="46" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="北京市" image="ico_location">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yanzhiUserIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ySe-17-3wW">
+                        <rect key="frame" x="5" y="196" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="14" id="XHw-1M-XXh"/>
+                            <constraint firstAttribute="height" constant="14" id="qYd-pU-9dy"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="斗鱼直播" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Clm-lF-3kj" userLabel="NickNameLabel">
+                        <rect key="frame" x="21" y="195" width="53.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tHA-X3-oGi" userLabel="OnlineBtn">
+                        <rect key="frame" x="150" y="5" width="39" height="14"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <state key="normal" title="8888" image="viewerIcon"/>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="mhn-lG-qfg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="5Rw-M7-4xx"/>
+                <constraint firstAttribute="bottom" secondItem="BU0-Kh-Mod" secondAttribute="bottom" constant="5" id="72R-XP-NXo"/>
+                <constraint firstAttribute="trailing" secondItem="tHA-X3-oGi" secondAttribute="trailing" constant="5" id="L9n-iA-di5"/>
+                <constraint firstItem="Clm-lF-3kj" firstAttribute="leading" secondItem="ySe-17-3wW" secondAttribute="trailing" constant="2" id="LtB-RB-bbO"/>
+                <constraint firstItem="tHA-X3-oGi" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="M5B-c1-bye"/>
+                <constraint firstAttribute="trailing" secondItem="BU0-Kh-Mod" secondAttribute="trailing" constant="5" id="OnF-TD-qMS"/>
+                <constraint firstItem="Clm-lF-3kj" firstAttribute="centerY" secondItem="ySe-17-3wW" secondAttribute="centerY" id="QxE-nW-gai"/>
+                <constraint firstAttribute="trailing" secondItem="mhn-lG-qfg" secondAttribute="trailing" id="VKN-Wr-PtB"/>
+                <constraint firstItem="Clm-lF-3kj" firstAttribute="top" secondItem="mhn-lG-qfg" secondAttribute="bottom" id="Ynf-Fo-djV"/>
+                <constraint firstItem="mhn-lG-qfg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="a6P-rc-hnd"/>
+                <constraint firstItem="ySe-17-3wW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="jaW-0a-SRa"/>
+                <constraint firstAttribute="bottom" secondItem="ySe-17-3wW" secondAttribute="bottom" constant="5" id="tjU-Bf-wls"/>
+            </constraints>
+            <size key="customSize" width="194" height="215"/>
+            <connections>
+                <outlet property="cityBtn" destination="BU0-Kh-Mod" id="hec-9S-Ig1"/>
+                <outlet property="iconImageView" destination="mhn-lG-qfg" id="02R-e7-EhO"/>
+                <outlet property="nickNameLabel" destination="Clm-lF-3kj" id="CvZ-ge-mfq"/>
+                <outlet property="onlineBtn" destination="tHA-X3-oGi" id="9kU-D0-OqB"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="100.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Img_default" width="172" height="103"/>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="viewerIcon" width="10" height="8"/>
+        <image name="yanzhiUserIcon" width="12" height="12"/>
+    </resources>
+</document>
